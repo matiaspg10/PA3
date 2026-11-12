@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesa y Detalle</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <style>
+    .grid-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 45px;
+    gap: 10px;
+    width: 90%;
+    min-height: 700px;
+    margin: 20px auto;
+    padding: 8px;
+}
+
+.uno{
+    background-color: black;
+    color: white;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    text-align: center;
+    padding: 15px;
+}
+
+.dos{
+    border: 1px solid black;
+    background-color: white;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    padding: 15px;
+}
+
+.dos h2{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+#texto{
+    display: block;
+    width: 100%;
+    color: black;
+    text-align: justify;
+    padding: 5px;
+    column-count: 2;
+    column-gap: 36px;
+    column-rule: 1px dashed red;
+}
+.texto img{
+  padding: 20px;
+  height: 300px;
+  width: 300px;
+  
+}
+.tres{
+    border: 1px solid black;
+    background-color: white;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    padding: 10px;
+}
+
+.tres img{
+    width: 1000%;
+    height: 650px;
+}
+
+.cuatro{
+    background-color: black;
+    color: white;
+    grid-column: 1/5;
+    grid-row: 3/4;
+    text-align: center;
+    padding: 14px;
+}
+/*COLUMNAS*/
+.texto{
+        text-align: justify;
+        padding:5px;
+        column-count: 2;
+        column-gap: 36px;
+        column-rule: 1px dashed red;
+        column-width: 140px;
+}
+#separado{
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color:#EBE8BF ;
+    margin-top: 10px;
+    padding: 20px;
+    height: 1090px;
+}
+  </style>
+</head>
+<body>
+   <div id="principal">
+          <header id="cabecera">
+          <nav>
+          <img id="logo" src="imagenes/logo.png" alt="Logo del emprendimiento">
+             <ul id="menu">
+               <li><i class="fa-solid fa-house"></i><a href="index.html">INICIO</a></li>
+               <li><i class="fa-solid fa-pencil"></i><a href="blog.html">BLOG</a></li>
+               <li><i class="fa-solid fa-images"></i><a href="galeria.html">GALERIA</a></li>
+               <li><i class="fa-solid fa-images"></i><a href="videos.html">VIDEOS</a></li>
+               <li><i class="fa-solid fa-phone"></i><a href="contacto.html">CONTACTO</a></li>
+               <li><i class="fa-solid fa-people-group"></i><a href="nosotros.html">NOSOTROS</a></li>
+             </ul>
+          </nav>
+          </header>
+        <section id="separado">
+          <div class="grid-layout">
+          <div class="caja uno">Nosotros</div>
+       
+          <div class="caja dos"> 
+            <h2>¿Quienes somos?</h2>
+            <div class="texto">
+                Somos Mesa y Detalle, un emprendimiento familiar dedicado a la elaboración de bocaditos de calidad para acompañar los momentos más especiales de nuestros clientes. Nacimos de nuestra pasión por la cocina y del deseo de compartir sabores, experiencias y momentos inolvidables a través de cada una de nuestras preparaciones.
+
+                Nuestra familia está conformada por cuatro integrantes: papá, mamá, hijo e hija. Cada uno aporta sus ideas, habilidades, creatividad y dedicación para hacer crecer este proyecto. Trabajamos juntos con entusiasmo y compromiso, porque creemos que el esfuerzo familiar es una parte fundamental de nuestra identidad y de todo lo que ofrecemos.
+
+                Nos especializamos en preparar una variedad de bocaditos ideales para cumpleaños, reuniones familiares, celebraciones, fiestas y diferentes tipos de eventos. Buscamos ofrecer alternativas que se adapten a distintas ocasiones, cuidando siempre la calidad de nuestros ingredientes, el sabor de cada preparación y la presentación de nuestros productos.
+                <img src="imagenes/4.jpg" alt="">
+
+                En Mesa y Detalle consideramos que cada pequeño detalle hace la diferencia. Por eso, ponemos especial atención en todo el proceso de elaboración, desde la selección de los ingredientes hasta la presentación final. Nuestro objetivo es que cada producto no solo sea delicioso, sino que también transmita dedicación, cariño y responsabilidad.
+
+                Más que preparar alimentos, queremos formar parte de los momentos que las personas comparten con sus seres queridos. Sabemos que detrás de cada celebración existen recuerdos, emociones y motivos para sonreír, y nos sentimos orgullosos de poder aportar algo especial a esas ocasiones.
+
+                Nos caracterizamos por el compromiso, la creatividad, la responsabilidad y el trabajo en equipo. Cada pedido representa una oportunidad para demostrar nuestro esfuerzo y seguir mejorando, aprendiendo nuevas ideas y ofreciendo productos que cumplan con las expectativas de nuestros clientes.
+                <img src="imagenes/personas.jpg" alt="">
+            </div>
+          
+         
+         </div>
+          
+          <div class="caja tres">Publicidad
+            <img src="imagenes/tenedor.jpg" alt="">
+          </div>
+          <div class="caja cuatro">Copyright 2026 - Todos los derecho Reservados</div>
+        </div>
+        </section>
+         <footer>
+                <div id="iconos1">
+                    <a href="https://x.com/" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+        </footer>
+   </div>
+  
+</body>
+</html>
